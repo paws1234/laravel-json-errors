@@ -3,7 +3,7 @@
 namespace Paws1234\LaravelJsonErrors;
 
 use Illuminate\Support\ServiceProvider;
-use YourVendor\LaravelJsonErrors\Http\Middleware\JsonExceptionMiddleware;
+use Paws1234\LaravelJsonErrors\Http\Middleware\JsonExceptionMiddleware;
 
 class JsonErrorsServiceProvider extends ServiceProvider
 {
