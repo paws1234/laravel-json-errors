@@ -13,6 +13,12 @@ class JsonErrorTest extends TestCase
         return [JsonErrorsServiceProvider::class];
     }
 
+    protected function setUp(): void
+    {
+        parent::setUp();
+        $this->app['router']->aliasMiddleware('json.errors', \Paws1234\LaravelJsonErrors\Http\Middleware\JsonExceptionMiddleware::class);
+    }
+
     /** @test */
     public function it_returns_json_on_validation_exception()
     {
