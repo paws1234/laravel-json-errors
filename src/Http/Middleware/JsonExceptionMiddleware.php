@@ -35,16 +35,17 @@ class JsonExceptionMiddleware
             ? $e->errors()
             : (config('json-errors.debug') ? [
                 'exception' => get_class($e),
-                'message' => $e->getMessage(),
-                'file' => $e->getFile(),
-                'line' => $e->getLine(),
+                'message'   => $e->getMessage(),
+                'file'      => $e->getFile(),
+                'line'      => $e->getLine(),
             ] : null);
 
-        return response()->json(array_filter([
+        // Don’t use array_filter, preserve false values
+        return response()->json([
             'success' => false,
             'status'  => $status,
             'error'   => $error,
             'details' => $details,
-        ]), $status);
+        ], $status);
     }
 }
