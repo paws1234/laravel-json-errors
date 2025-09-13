@@ -1,6 +1,6 @@
 <?php
 
-namespace YourVendor\LaravelJsonErrors\Http\Middleware;
+namespace Paws1234\LaravelJsonErrors\Http\Middleware;
 
 use Closure;
 use Throwable;

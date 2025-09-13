@@ -1,6 +1,6 @@
 <?php
 
-namespace YourVendor\LaravelJsonErrors;
+namespace Paws1234\LaravelJsonErrors;
 
 use Illuminate\Support\ServiceProvider;
 use YourVendor\LaravelJsonErrors\Http\Middleware\JsonExceptionMiddleware;
