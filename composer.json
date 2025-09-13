@@ -1,5 +1,5 @@
 {
-  "name": "Paws1234/laravel-json-errors",
+  "name": "paws1234/laravel-json-errors",   
   "description": "Streamlined JSON error handling for Laravel APIs.",
   "keywords": ["laravel", "error-handling", "json", "api"],
   "type": "library",
