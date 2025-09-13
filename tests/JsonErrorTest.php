@@ -1,9 +1,8 @@
 <?php
-
-namespace YourVendor\LaravelJsonErrors\Tests;
+namespace Paws1234\LaravelJsonErrors\Tests;
 
 use Orchestra\Testbench\TestCase;
-use YourVendor\LaravelJsonErrors\JsonErrorsServiceProvider;
+use Paws1234\LaravelJsonErrors\JsonErrorsServiceProvider;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Validation\ValidationException;
 
@@ -31,3 +30,4 @@ class JsonErrorTest extends TestCase
         ]);
     }
 }
+
